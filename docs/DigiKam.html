@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gabriel Andrade-Ponce">
+
+<title>Cámaras trampa CAPES - Configurar y usar DigiKam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Cámaras trampa CAPES</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Inicio</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./IAR_doc.html">
+ <span class="menu-text">Script IAR</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./DigiKam.html" aria-current="page">
+ <span class="menu-text">DigiKam</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gpandradep/Curso-Congreso-Chihuahhua"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenido</h2>
+   
+  <ul>
+  <li><a href="#pasos-para-configurar-digikam" id="toc-pasos-para-configurar-digikam" class="nav-link active" data-scroll-target="#pasos-para-configurar-digikam">Pasos para configurar DigiKam</a></li>
+  <li><a href="#agregar-colecciones" id="toc-agregar-colecciones" class="nav-link" data-scroll-target="#agregar-colecciones">Agregar colecciones</a>
+  <ul class="collapse">
+  <li><a href="#paso-previo-limpiar-fotos" id="toc-paso-previo-limpiar-fotos" class="nav-link" data-scroll-target="#paso-previo-limpiar-fotos">Paso previo: limpiar fotos</a></li>
+  </ul></li>
+  <li><a href="#etiquetar-fotos" id="toc-etiquetar-fotos" class="nav-link" data-scroll-target="#etiquetar-fotos">Etiquetar fotos</a>
+  <ul class="collapse">
+  <li><a href="#otras-etiquetas" id="toc-otras-etiquetas" class="nav-link" data-scroll-target="#otras-etiquetas">Otras etiquetas</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Configurar y usar DigiKam</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    <a href="https://gpandradep.github.io/gpandradep/">Gabriel Andrade-Ponce</a> 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Instituto de Ecología A.C.
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">21 de abril de 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="pasos-para-configurar-digikam" class="level1">
+<h1>Pasos para configurar DigiKam</h1>
+<p>Una vez instalado DigiKam tenemos que configurarlo y generar la carpeta donde se guardaran los archivos SQL que contendrán toda la información de meta-datos.</p>
+<ol type="1">
+<li><p>Si es la primera vez que abres DigiKam se abrirá una ventana de bienvenida, en la cual le das siguiente</p></li>
+<li><p><strong>Configurar carpeta de imágenes</strong>: Seleccionar la carpeta donde están guardadas tus imágenes. Lo importante de este punto es que sea una carpeta local. Mucho cuidado con escoger una carpeta en un disco extraible o usb. Por ahora la mejor opción es ubicar el directorio en donde están nuestras imágenes a trabajar</p></li>
+<li><p><strong>Configurar carpeta de bases de datos</strong>: Ahora te pide saber en que carpeta guardara el SQL. Este paso es muy importante porque si pierden estos archivos DigiKam no funcionará. Porfavor, no uses una carpeta de una usb o disco extraible</p></li>
+<li><p><strong>Configurar archivos raw</strong>: Esta opción la dejamos por defecto y continuamos</p></li>
+<li><p><strong>Configurar almacenamiento de meta-datos</strong>: En este punto le damos que si queremos añadir la información a los archivos. Esto hace que guarde los metadatos cuando lo indiquemos y son precisamente los que se usarán en CamtrapR</p></li>
+<li><p>Todos los demás pasos los dejaremos por defecto y pondremos siguiente hasta que lleguemos a finalizar.</p></li>
+<li><p>Ya una vez iniciado Digikam iremos a la pestaña de preferencias y configuración de DigiKam. Se desplegara una ventana y en la sección izquierda unos iconos. Por ahora nos centraremos en meta-datos. En la parte inferior quitaremos la opción de actualizar fecha de modificación del archivo cuando se modifique. Ésto es importante porque necesitamos la fecha original del archivo ya que es la fecha de registro de la foto</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Digi7.png" class="img-fluid figure-img" width="520"></p>
+</figure>
+</div>
+</section>
+<section id="agregar-colecciones" class="level1">
+<h1>Agregar colecciones</h1>
+<section id="paso-previo-limpiar-fotos" class="level2">
+<h2 class="anchored" data-anchor-id="paso-previo-limpiar-fotos">Paso previo: limpiar fotos</h2>
+<p>Debido a que una gran cantidad de fotos puede llegar a saturar DigiKam en computadores con bajo poder de procesador. Es recomendable primero realizar la limpieza de las fotos, es decir eliminar las fotos sin registros. De esta forma solo se ingresan a DigiKam la fotos de interés o donde hay registros.</p>
+<p>Si en la sección anterior en el paso 2 agregaste la carpeta o colección donde están tus cámaras trampa deben aparecer ya tus carpetas. Si no, simplemente ve de nuevo a la pestaña de preferencias a colecciones y agrega la carpeta donde están las carpetas de tus cámaras. Nota que en esta sección si puedes agregar colecciones en medios extraviarles usando la opción para ello.</p>
+<p><img src="img/coleccion.png" class="img-fluid" width="529"></p>
+<p>Si todo sale bien en la parte izquierda de DigiKam en la pestaña de Álbumes aparecerá la carpeta, con las subcapetas de cada estación. <strong>La organización es importante para el posterior análisis en R: Necesitas seleccionar la carpeta que será tu álbum y dentro tendrás una carpeta por cada estación de muestreo que contendrá sus respectivas fotos</strong></p>
+<p><img src="img/fotos.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="etiquetar-fotos" class="level1">
+<h1>Etiquetar fotos</h1>
+<p>Ya tenemos nuestras fotos en DigiKam, ahora vamos a empezar a identificar y etiquetar los registros que tenemos en cada estación.</p>
+<ol type="1">
+<li>Lo primero que haremos es generar la etiqueta de especie. Para ello iremos a la parte izquierda de la ventana de DigiKam y daremos clic en la pestaña de 1) Etiquetas, 2) Abrir gestor de etiquetas, 3) “+” para agregar una nueva etiqueta, 4) la llamaremos etiqueta de <em>Species</em></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/etiqueta.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li><p>Ya tenemos nuestra primera etiqueta, ahora vamos a ver que especies tenemos en las fotos. Voy a seleccionar la carpeta C1 y voy a ver la vista previa de la primera fotografía.</p>
+<p><img src="img/foto1.png" class="img-fluid" width="505"></p></li>
+</ol>
+<p>Es un coyote lo que vemos en esa foto 🐺 y su nombre científico es <em>Canis latrans</em>. Pues bien, vamos a crear la etiqueta para esta especie. Regresaremos a la pestaña de etiquetas y luego a gestionar etiquetas. En este punto es importante que antes de crear la etiqueta, <strong>seleccionemos la etiqueta de Species previamente generada.</strong> Esto es importante porque las etiquetas son jerárquicas, es decir que la etiqueta que vamos a crear se va a ubicar dentro de la etiqueta de Species.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/etiqueta1.png" class="img-fluid figure-img" width="547"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Para aplicar la etiqueta regresaremos a los Álbumes y a la vista previa de la imagen del coyote. Una vez seleccionada la imagen 1) dirígete a la parte derecha de la ventana de DigiKam a la pestaña que dice <strong>Pies de foto</strong>, 2) En la ventana que se despliega dirigete a la pestaña de etiquetas, 3) verás que están las etiquetas disponibles y en este caso seleccionaremos a <em>Canis latrans</em>. 4) Finalmente le damos en aplicar. Puedes ver que al hacerlo ahora aparece debajo de la imagen la etiqueta de <em>Canis latrans</em>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/aplicaetiquet.png" class="img-fluid figure-img" width="537"></p>
+</figure>
+</div>
+<p>Muy bien. Ahora tenemos que repetir el proceso para cada una de las fotos. Estas son las especies:</p>
+<ul>
+<li><p>Coyote = <em>Canis latrans</em></p></li>
+<li><p>Liebre de California = <em>Lepus californicus</em></p></li>
+<li><p>Lince rojo = <em>Lynx rufus</em></p></li>
+<li><p>Zopilote o buitre aura = <em>Cathartes aura</em></p>
+<h3 id="importante" class="anchored">Importante</h3>
+<p>Una vez termines de etiquetar las fotografías de cada cámara, debes seleccionar las todas las fotos de la carpeta. Ésto puedes hacerlo con shift + seleccionar todas las fotos o con Ctrl + A. Luego de seleccionar todas las fotos de la carpeta te vas a la pestaña de pie de fotos y en la parte inferior, justo debajo del botón de “aplicar”, hay un botón de “Más”. Dale clic a este botón y luego seleccionas <strong>escribir metadatos en cada archivo.</strong> Si no completas este paso, los metadatos no se escribirán en las fotos originales y por lo tanto no funcionará camtrapR.</p>
+<p><img src="img/escribirmeta.png" class="img-fluid" width="524"></p></li>
+</ul>
+<section id="otras-etiquetas" class="level2">
+<h2 class="anchored" data-anchor-id="otras-etiquetas">Otras etiquetas</h2>
+<p>Es posible generar diferentes etiquetas dependiendo de los objetivos e intereses del estudio. Por ejemplo, puedes asignar etiquetas para individuos identificados, sexo o comportamientos. Lo importante aquí es que deben ser etiquetas independientes, o con una jerarquía diferente de la de especie.</p>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© Copyright 2023, Gabriel Andrade-Ponce</div>   
+    <div class="nav-footer-right">Página construida con <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

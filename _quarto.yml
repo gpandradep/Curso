@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Cámaras trampa CAPES"
+  
+ 
+  page-footer:
+    right: "Página construida con [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, Gabriel Andrade-Ponce"
+    background: "#D9E3E4" 
+  
+  
+  navbar:
+    background: "#6188bc"
+    left:
+      - href: index.qmd
+        text: Inicio
+    
+    right:
+      - href: IAR_doc.qmd
+        text: Script IAR
+      - href: DigiKam.qmd
+        text: DigiKam
+      
+    tools:
+      - icon: github
+        href: https://github.com/gpandradep/Curso-Congreso-Chihuahhua
+        text: "GitHub"
+
+format:
+  html:
+    theme: journal
+    css: styles.css
+    toc: true
+lang: es
+editor: visual
+

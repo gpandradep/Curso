@@ -1,0 +1,86 @@
+---
+title: "Cámaras trampa en R"
+subtitle: "Procesamiento Organización y Análisis de datos"
+author: 
+ - name: Gabriel Andrade-Ponce
+   url: https://gpandradep.github.io/gpandradep/ 
+   affiliation: Posgrado, Instituto de Ecología A.C.
+   orcid_id: 0000-0003-2416-1792
+date: last-modified
+---
+
+# Bienvenidos
+
+Hola a todos bienvenidos al curso de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso.
+
+# Instrucciones
+
+## Instalar R y Rstudio
+
+Casi todos los ejercicios del curso se desarrollarán en el lenguaje de programación **R**, usando la interfaz de **Rstudio**. Para varios paquetes es necesario tener instalado **Rtools.** Por último, también vamos a usar el programa **DigiKam.**
+
+Para todos los detalles de como instalar el software por favor seguir la siguiente guía [🔗 link aquí](https://gpandradep.github.io/Intro-a-R/posts/Instalar%20R%20y%20Rstudio/)
+
+## Rtools
+
+Para instalar Rtools simplemente dirigete a este [**enlace**](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html) y sigue las instrucciones para instalar Rtools43
+
+## DigiKam
+
+Para instalar DigiKam debes seguir los siguientes pasos:
+
+1.  **Descarga**: Ve a la siguiente dirección <https://www.digikam.org/download/> y descarga el instalador que corresponda a tu sistema operativo.
+
+2.  Una vez descargado abrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.
+
+3.  Para más detalles o dudas puedes revisar el capítulo 2 del libro [Fototrampeo en R: Organización y Análisis de Datos](https://www.researchgate.net/publication/348922971_Fototrampeo_en_R_Organizacion_y_Analisis_de_Datos_Volumen_I)
+
+## Instalar paqueterías
+
+Se espera que previo al curso instales las siguientes paqueterías
+
+```{r}
+#| eval: false
+install.packages(c("tidyverse", 
+                   "MuMIn",
+                   "DHARMa", 
+                   "camtrapR", 
+                   "leaflet", 
+                   "sp", 
+                   "ggtext", 
+                   "AICcmodavg", 
+                   "broom", 
+                   "ggeffects",
+                   "unmarked"
+                   
+))
+```
+
+# Día 1
+
+1.  Introducción al diseño de muestreo en estudios de cámaras trampa
+
+2.  DigiKam para el etiquetado de fotos
+
+    -   PDF del capítulo dos del libro aquí
+    -   Descargar fotos sin etiquetar
+
+3.  CamtrapR: organización y manejo de datos de cámaras trampa
+
+# Día 2
+
+4.  Introducción al índice de abundancia relativa
+
+5.  Modelos de ocupación: Conceptos y ajuste en unmarked
+
+# Día 3
+
+6.  Modelos de ocupación: continuación y métodos de validación del modelo
+
+7.  Modelos de ocupación para dos o más especies
+
+# Entidades patrocinadoras
+
+Este curso fue posible gracias al apoyo del programa de Servicio al Mundo y la fundación Podion.
+
+![](img/institutions.png){fig-align="center" width="702"}
