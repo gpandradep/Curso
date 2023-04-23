@@ -19,10 +19,11 @@ website:
         text: Inicio
     
     right:
-      - href: IAR_doc.qmd
-        text: Script IAR
       - href: DigiKam.qmd
         text: DigiKam
+      - href: IAR_doc.qmd
+        text: Script IAR
+      
       
     tools:
       - icon: github
