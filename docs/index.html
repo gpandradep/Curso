@@ -150,12 +150,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./IAR_doc.html">
- <span class="menu-text">Script IAR</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./DigiKam.html">
  <span class="menu-text">DigiKam</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./IAR_doc.html">
+ <span class="menu-text">Script IAR</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/gpandradep/Curso-Congreso-Chihuahhua"><i class="bi bi-github" role="img">
@@ -185,9 +185,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#digikam" id="toc-digikam" class="nav-link" data-scroll-target="#digikam">DigiKam</a></li>
   <li><a href="#instalar-paqueterías" id="toc-instalar-paqueterías" class="nav-link" data-scroll-target="#instalar-paqueterías">Instalar paqueterías</a></li>
   </ul></li>
+  <li><a href="#descargar-materiales" id="toc-descargar-materiales" class="nav-link" data-scroll-target="#descargar-materiales">Descargar materiales</a>
+  <ul class="collapse">
   <li><a href="#día-1" id="toc-día-1" class="nav-link" data-scroll-target="#día-1">Día 1</a></li>
   <li><a href="#día-2" id="toc-día-2" class="nav-link" data-scroll-target="#día-2">Día 2</a></li>
   <li><a href="#día-3" id="toc-día-3" class="nav-link" data-scroll-target="#día-3">Día 3</a></li>
+  </ul></li>
   <li><a href="#entidades-patrocinadoras" id="toc-entidades-patrocinadoras" class="nav-link" data-scroll-target="#entidades-patrocinadoras">Entidades patrocinadoras</a></li>
   </ul>
 </nav>
@@ -222,7 +225,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22 de abril de 2023</p>
+      <p class="date">23 de abril de 2023</p>
     </div>
   </div>
   
@@ -235,6 +238,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="bienvenidos" class="level1">
 <h1>Bienvenidos</h1>
 <p>Hola a todos bienvenidos al curso de <strong>Cámaras trampa en R: Procesamiento Organización y Análisis de datos</strong>. En esta página encontrarán todas las instrucciones para llevar a cabo el curso.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/flayer.jpg" class="img-fluid figure-img" width="462"></p>
+</figure>
+</div>
 </section>
 <section id="instrucciones" class="level1">
 <h1>Instrucciones</h1>
@@ -245,14 +253,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="rtools" class="level2">
 <h2 class="anchored" data-anchor-id="rtools">Rtools</h2>
-<p>Para instalar Rtools simplemente dirigete a este <a href="https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html"><strong>enlace</strong></a> y sigue las instrucciones para instalar Rtools43</p>
+<p>Para instalar Rtools simplemente dirígete a este <a href="https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html"><strong>enlace</strong></a> y sigue las instrucciones para instalar Rtools43</p>
 </section>
 <section id="digikam" class="level2">
 <h2 class="anchored" data-anchor-id="digikam">DigiKam</h2>
 <p>Para instalar DigiKam debes seguir los siguientes pasos:</p>
 <ol type="1">
 <li><p><strong>Descarga</strong>: Ve a la siguiente dirección <a href="https://www.digikam.org/download/" class="uri">https://www.digikam.org/download/</a> y descarga el instalador que corresponda a tu sistema operativo.</p></li>
-<li><p>Una vez descargado abrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.</p></li>
+<li><p>Una vez descargado ábrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.</p></li>
 <li><p>Para más detalles o dudas puedes revisar el capítulo 2 del libro <a href="https://www.researchgate.net/publication/348922971_Fototrampeo_en_R_Organizacion_y_Analisis_de_Datos_Volumen_I">Fototrampeo en R: Organización y Análisis de Datos</a></p></li>
 </ol>
 </section>
@@ -260,47 +268,66 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="instalar-paqueterías">Instalar paqueterías</h2>
 <p>Se espera que previo al curso instales las siguientes paqueterías</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"MuMIn"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"DHARMa"</span>, </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"camtrapR"</span>, </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"leaflet"</span>, </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"sp"</span>, </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ggtext"</span>, </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"AICcmodavg"</span>, </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"broom"</span>, </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ggeffects"</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"unmarked"</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                   </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"camtrapR"</span>, <span class="co"># Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"tidyverse"</span>, <span class="co"># Easily Install and Load the 'Tidyverse'</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"leaflet"</span>, <span class="co"># Create Interactive Web Maps with the JavaScript ' Library</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"sp"</span>, <span class="co"># Classes and Methods for Spatial Data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ggtext"</span>, <span class="co"># Improved Text Rendering Support for 'ggplot2'</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"AICcmodavg"</span>, <span class="co"># Model Selection and Multimodel Inference Based C(c)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"broom"</span>, <span class="co"># Convert Statistical Objects into Tidy Tibbles</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ggeffects"</span>, <span class="co"># Create Tidy Data Frames of Marginal Effects for  from Model Outputs</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"performance"</span>, <span class="co"># Assessment of Regression Models Performance</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"unmarked"</span>, <span class="co"># Models for Data from Unmarked Animals</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"MuMIn"</span>, <span class="co"># Multi-Model Inference</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"usdm"</span>, <span class="co"># Uncertainty Analysis for Species Distribution Models</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"GGally"</span>, <span class="co"># Extension to 'ggplot2</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"patchwork"</span>, <span class="co"># The Composer of Plots</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ubms"</span>, <span class="co"># Bayess version of unmarked</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"mgcv"</span>,  <span class="co"># GAM to residuals occ model</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ncf"</span>, <span class="co">#correlograms</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"tictoc"</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"beepr"</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"wiqid"</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                   </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
-<section id="día-1" class="level1">
-<h1>Día 1</h1>
+<section id="descargar-materiales" class="level1">
+<h1>Descargar materiales</h1>
+<p>A continuación encontraras los link de descarga para los materiales (datos y scripts) que usaremos en el curso. Son carpetas comprimidas y recomiendo que las descargues y extraigas en la carpeta de tu preferencia <strong>antes de comenzar el curso</strong></p>
+<section id="día-1" class="level2">
+<h2 class="anchored" data-anchor-id="día-1">Día 1</h2>
 <ol type="1">
-<li><p>Introducción al diseño de muestreo en estudios de cámaras trampa</p></li>
-<li><p>DigiKam para el etiquetado de fotos</p>
+<li><p><a href="https://drive.google.com/file/d/1-LRoK6Rb615uca15uoZAEBZATiHc4IUF/view?usp=share_link">Introducción al diseño de muestreo en estudios de cámaras trampa[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1eB7XwB40xLXlpQTMoADTyE0fvKhgXdG6/view?usp=share_link">DigiKam para el etiquetado de fotos[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></p></li>
+</ol>
 <ul>
-<li>PDF del capítulo dos del libro aquí</li>
-<li>Descargar fotos sin etiquetar</li>
-</ul></li>
-<li><p>CamtrapR: organización y manejo de datos de cámaras trampa</p></li>
+<li><a href="https://gpandradep.github.io/Curso/DigiKam.html">Instrucciones en linea [<svg viewbox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600 0h-48c-8.84 0-16 7.16-16 16v480c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16z"></path></svg>]</a></li>
+</ul>
+<ol start="3" type="1">
+<li><a href="https://drive.google.com/file/d/1tMEDoTRcKAOoNm1bmNJcylA0CqaL3KkH/view?usp=share_link">CamtrapR: organización y manejo de datos de cámaras trampa[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></li>
 </ol>
 </section>
-<section id="día-2" class="level1">
-<h1>Día 2</h1>
+<section id="día-2" class="level2">
+<h2 class="anchored" data-anchor-id="día-2">Día 2</h2>
 <ol start="4" type="1">
-<li><p>Introducción al índice de abundancia relativa</p></li>
-<li><p>Modelos de ocupación: Conceptos y ajuste en unmarked</p></li>
+<li><a href="https://drive.google.com/file/d/1nFaN7RcElg3G33FphmXX9jXr3MrOdbUV/view?usp=share_link">Introducción al índice de abundancia relativa[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></li>
+</ol>
+<ul>
+<li><a href="https://gpandradep.github.io/Curso/IAR_doc.html">Script disponible en linea [<svg viewbox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600 0h-48c-8.84 0-16 7.16-16 16v480c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16z"></path></svg>]</a></li>
+</ul>
+<ol start="5" type="1">
+<li><a href="https://drive.google.com/file/d/1vp4-GUmeOJnx6uRRCh1JbsUTdFbamLjK/view?usp=share_link">Modelos de ocupación: Conceptos y ajuste en unmarked[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></li>
 </ol>
 </section>
-<section id="día-3" class="level1">
-<h1>Día 3</h1>
+<section id="día-3" class="level2">
+<h2 class="anchored" data-anchor-id="día-3">Día 3</h2>
 <ol start="6" type="1">
-<li><p>Modelos de ocupación: continuación y métodos de validación del modelo</p></li>
-<li><p>Modelos de ocupación para dos o más especies</p></li>
+<li><p><a href="https://drive.google.com/file/d/1vp4-GUmeOJnx6uRRCh1JbsUTdFbamLjK/view?usp=share_link">Modelos de ocupación: continuación y métodos de validación del modelo[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1BJ2yq_35au5TryVyB6EZ1j4aS_XB9xAl/view?usp=share_link">Modelos de ocupación para dos o más especies[<svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path></svg>]</a></p></li>
 </ol>
+</section>
 </section>
 <section id="entidades-patrocinadoras" class="level1">
 <h1>Entidades patrocinadoras</h1>

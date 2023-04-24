@@ -18,21 +18,21 @@
     "href": "index.html#rtools",
     "title": "Cámaras trampa en R",
     "section": "Rtools",
-    "text": "Rtools\nPara instalar Rtools simplemente dirigete a este enlace y sigue las instrucciones para instalar Rtools43"
+    "text": "Rtools\nPara instalar Rtools simplemente dirígete a este enlace y sigue las instrucciones para instalar Rtools43"
   },
   {
     "objectID": "index.html#digikam",
     "href": "index.html#digikam",
     "title": "Cámaras trampa en R",
     "section": "DigiKam",
-    "text": "DigiKam\nPara instalar DigiKam debes seguir los siguientes pasos:\n\nDescarga: Ve a la siguiente dirección https://www.digikam.org/download/ y descarga el instalador que corresponda a tu sistema operativo.\nUna vez descargado abrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.\nPara más detalles o dudas puedes revisar el capítulo 2 del libro Fototrampeo en R: Organización y Análisis de Datos"
+    "text": "DigiKam\nPara instalar DigiKam debes seguir los siguientes pasos:\n\nDescarga: Ve a la siguiente dirección https://www.digikam.org/download/ y descarga el instalador que corresponda a tu sistema operativo.\nUna vez descargado ábrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.\nPara más detalles o dudas puedes revisar el capítulo 2 del libro Fototrampeo en R: Organización y Análisis de Datos"
   },
   {
     "objectID": "index.html#instalar-paqueterías",
     "href": "index.html#instalar-paqueterías",
     "title": "Cámaras trampa en R",
     "section": "Instalar paqueterías",
-    "text": "Instalar paqueterías\nSe espera que previo al curso instales las siguientes paqueterías\n\ninstall.packages(c(\"tidyverse\", \n                   \"MuMIn\",\n                   \"DHARMa\", \n                   \"camtrapR\", \n                   \"leaflet\", \n                   \"sp\", \n                   \"ggtext\", \n                   \"AICcmodavg\", \n                   \"broom\", \n                   \"ggeffects\",\n                   \"unmarked\"\n                   \n))"
+    "text": "Instalar paqueterías\nSe espera que previo al curso instales las siguientes paqueterías\n\ninstall.packages(c(\"camtrapR\", # Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses\n                   \"tidyverse\", # Easily Install and Load the 'Tidyverse'\n                   \"leaflet\", # Create Interactive Web Maps with the JavaScript ' Library\n                   \"sp\", # Classes and Methods for Spatial Data\n                   \"ggtext\", # Improved Text Rendering Support for 'ggplot2'\n                   \"AICcmodavg\", # Model Selection and Multimodel Inference Based C(c)\n                   \"broom\", # Convert Statistical Objects into Tidy Tibbles\n                   \"ggeffects\", # Create Tidy Data Frames of Marginal Effects for  from Model Outputs\n                   \"performance\", # Assessment of Regression Models Performance\n                   \"unmarked\", # Models for Data from Unmarked Animals\n                   \"MuMIn\", # Multi-Model Inference\n                   \"usdm\", # Uncertainty Analysis for Species Distribution Models\n                   \"GGally\", # Extension to 'ggplot2\n                   \"patchwork\", # The Composer of Plots\n                   \"ubms\", # Bayess version of unmarked\n                   \"mgcv\",  # GAM to residuals occ model\n                   \"ncf\", #correlograms\n                   \"tictoc\",\n                   \"beepr\",\n                   \"wiqid\"\n                   \n))"
   },
   {
     "objectID": "DigiKam.html",
@@ -96,5 +96,33 @@
     "title": "Configurar y usar DigiKam",
     "section": "Otras etiquetas",
     "text": "Otras etiquetas\nEs posible generar diferentes etiquetas dependiendo de los objetivos e intereses del estudio. Por ejemplo, puedes asignar etiquetas para individuos identificados, sexo o comportamientos. Lo importante aquí es que deben ser etiquetas independientes, o con una jerarquía diferente de la de especie."
+  },
+  {
+    "objectID": "index.html#día-1",
+    "href": "index.html#día-1",
+    "title": "Cámaras trampa en R",
+    "section": "Día 1",
+    "text": "Día 1\n\nIntroducción al diseño de muestreo en estudios de cámaras trampa[ ]\nDigiKam para el etiquetado de fotos[ ]\n\n\nInstrucciones en linea [ ]\n\n\nCamtrapR: organización y manejo de datos de cámaras trampa[ ]"
+  },
+  {
+    "objectID": "index.html#día-2",
+    "href": "index.html#día-2",
+    "title": "Cámaras trampa en R",
+    "section": "Día 2",
+    "text": "Día 2\n\nIntroducción al índice de abundancia relativa[ ]\n\n\nScript disponible en linea [ ]\n\n\nModelos de ocupación: Conceptos y ajuste en unmarked[ ]"
+  },
+  {
+    "objectID": "index.html#día-3",
+    "href": "index.html#día-3",
+    "title": "Cámaras trampa en R",
+    "section": "Día 3",
+    "text": "Día 3\n\nModelos de ocupación: continuación y métodos de validación del modelo[ ]\nModelos de ocupación para dos o más especies[ ]"
+  },
+  {
+    "objectID": "IAR_doc.html#paquetes",
+    "href": "IAR_doc.html#paquetes",
+    "title": "Indice de ¿abundancia? relativa (RAI)",
+    "section": "PAquetes",
+    "text": "PAquetes\nUsaremos las siguientes librerías en R\n\nlibrary(camtrapR) # Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses\nlibrary(tidyverse) # Easily Install and Load the 'Tidyverse'\nlibrary(leaflet) # Create Interactive Web Maps with the JavaScript 'Leaflet' Library\nlibrary(sp) # Classes and Methods for Spatial Data\nlibrary(ggtext) # Improved Text Rendering Support for 'ggplot2'\nlibrary(AICcmodavg) # Model Selection and Multimodel Inference Based on (Q)AIC(c)\nlibrary(broom) # Convert Statistical Objects into Tidy Tibbles\nlibrary(ggeffects) # Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs\nlibrary(performance) # Assessment of Regression Models Performance"
   }
 ]

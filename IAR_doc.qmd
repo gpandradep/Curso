@@ -112,7 +112,7 @@ Creo que una manera sensata de usar el RAI es como una medida de actividad o int
 
 # Script
 
-## Librerías
+## PAquetes
 
 Usaremos las siguientes librerías en R
 

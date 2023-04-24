@@ -13,6 +13,8 @@ date: last-modified
 
 Hola a todos bienvenidos al curso de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso.
 
+![](img/flayer.jpg){fig-align="center" width="462"}
+
 # Instrucciones
 
 ## Instalar R y Rstudio
@@ -23,7 +25,7 @@ Para todos los detalles de como instalar el software por favor seguir la siguien
 
 ## Rtools
 
-Para instalar Rtools simplemente dirigete a este [**enlace**](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html) y sigue las instrucciones para instalar Rtools43
+Para instalar Rtools simplemente dirígete a este [**enlace**](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html) y sigue las instrucciones para instalar Rtools43
 
 ## DigiKam
 
@@ -31,7 +33,7 @@ Para instalar DigiKam debes seguir los siguientes pasos:
 
 1.  **Descarga**: Ve a la siguiente dirección <https://www.digikam.org/download/> y descarga el instalador que corresponda a tu sistema operativo.
 
-2.  Una vez descargado abrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.
+2.  Una vez descargado ábrelo y sigue las instrucciones. No es necesario cambiar las opciones por defecto, solo dar click en siguiente hasta que quede instalado y luego poner terminar.
 
 3.  Para más detalles o dudas puedes revisar el capítulo 2 del libro [Fototrampeo en R: Organización y Análisis de Datos](https://www.researchgate.net/publication/348922971_Fototrampeo_en_R_Organizacion_y_Analisis_de_Datos_Volumen_I)
 
@@ -41,43 +43,57 @@ Se espera que previo al curso instales las siguientes paqueterías
 
 ```{r}
 #| eval: false
-install.packages(c("tidyverse", 
-                   "MuMIn",
-                   "DHARMa", 
-                   "camtrapR", 
-                   "leaflet", 
-                   "sp", 
-                   "ggtext", 
-                   "AICcmodavg", 
-                   "broom", 
-                   "ggeffects",
-                   "unmarked"
+install.packages(c("camtrapR", # Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses
+                   "tidyverse", # Easily Install and Load the 'Tidyverse'
+                   "leaflet", # Create Interactive Web Maps with the JavaScript ' Library
+                   "sp", # Classes and Methods for Spatial Data
+                   "ggtext", # Improved Text Rendering Support for 'ggplot2'
+                   "AICcmodavg", # Model Selection and Multimodel Inference Based C(c)
+                   "broom", # Convert Statistical Objects into Tidy Tibbles
+                   "ggeffects", # Create Tidy Data Frames of Marginal Effects for  from Model Outputs
+                   "performance", # Assessment of Regression Models Performance
+                   "unmarked", # Models for Data from Unmarked Animals
+                   "MuMIn", # Multi-Model Inference
+                   "usdm", # Uncertainty Analysis for Species Distribution Models
+                   "GGally", # Extension to 'ggplot2
+                   "patchwork", # The Composer of Plots
+                   "ubms", # Bayess version of unmarked
+                   "mgcv",  # GAM to residuals occ model
+                   "ncf", #correlograms
+                   "tictoc",
+                   "beepr",
+                   "wiqid"
                    
 ))
 ```
 
-# Día 1
+# Descargar materiales
 
-1.  Introducción al diseño de muestreo en estudios de cámaras trampa
+A continuación encontraras los link de descarga para los materiales (datos y scripts) que usaremos en el curso. Son carpetas comprimidas y recomiendo que las descargues y extraigas en la carpeta de tu preferencia **antes de comenzar el curso**
 
-2.  DigiKam para el etiquetado de fotos
+## Día 1
 
-    -   PDF del capítulo dos del libro aquí
-    -   Descargar fotos sin etiquetar
+1.  [Introducción al diseño de muestreo en estudios de cámaras trampa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1-LRoK6Rb615uca15uoZAEBZATiHc4IUF/view?usp=share_link)
 
-3.  CamtrapR: organización y manejo de datos de cámaras trampa
+2.  [DigiKam para el etiquetado de fotos\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1eB7XwB40xLXlpQTMoADTyE0fvKhgXdG6/view?usp=share_link)
 
-# Día 2
+-   [Instrucciones en linea \[`r icons::fontawesome("signal")`\]](https://gpandradep.github.io/Curso/DigiKam.html)
 
-4.  Introducción al índice de abundancia relativa
+3.  [CamtrapR: organización y manejo de datos de cámaras trampa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1tMEDoTRcKAOoNm1bmNJcylA0CqaL3KkH/view?usp=share_link)
 
-5.  Modelos de ocupación: Conceptos y ajuste en unmarked
+## Día 2
 
-# Día 3
+4.  [Introducción al índice de abundancia relativa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1nFaN7RcElg3G33FphmXX9jXr3MrOdbUV/view?usp=share_link)
 
-6.  Modelos de ocupación: continuación y métodos de validación del modelo
+-   [Script disponible en linea \[`r icons::fontawesome("signal")`\]](https://gpandradep.github.io/Curso/IAR_doc.html)
 
-7.  Modelos de ocupación para dos o más especies
+5.  [Modelos de ocupación: Conceptos y ajuste en unmarked\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1vp4-GUmeOJnx6uRRCh1JbsUTdFbamLjK/view?usp=share_link)
+
+## Día 3
+
+6.  [Modelos de ocupación: continuación y métodos de validación del modelo\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1vp4-GUmeOJnx6uRRCh1JbsUTdFbamLjK/view?usp=share_link)
+
+7.  [Modelos de ocupación para dos o más especies\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1BJ2yq_35au5TryVyB6EZ1j4aS_XB9xAl/view?usp=share_link)
 
 # Entidades patrocinadoras
 
