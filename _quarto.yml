@@ -14,9 +14,6 @@ website:
   
   navbar:
     background: "#6188bc"
-    left:
-      - href: index.qmd
-        text: Inicio
     
     right:
       - href: DigiKam.qmd
@@ -33,6 +30,9 @@ website:
 format:
   html:
     theme: journal
+    mainfont: "Fira Sans"
+    fontsize: 23px
+    margin-right: 0px
     css: styles.css
     toc: true
 lang: es

@@ -1,6 +1,6 @@
 ---
 title: "Cámaras trampa en R"
-subtitle: "Procesamiento Organización y Análisis de datos"
+subtitle: "Procesamiento, Organización y Análisis de datos"
 author: 
  - name: Gabriel Andrade-Ponce
    url: https://gpandradep.github.io/gpandradep/ 
@@ -21,7 +21,7 @@ Hola a todos bienvenidos al curso de **Cámaras trampa en R: Procesamiento Organ
 
 Casi todos los ejercicios del curso se desarrollarán en el lenguaje de programación **R**, usando la interfaz de **Rstudio**. Para varios paquetes es necesario tener instalado **Rtools.** Por último, también vamos a usar el programa **DigiKam.**
 
-Para todos los detalles de como instalar el software por favor seguir la siguiente guía [🔗 link aquí](https://gpandradep.github.io/Intro-a-R/posts/Instalar%20R%20y%20Rstudio/)
+Para todos los detalles de como instalar el software por favor seguir la ésta guía [🔗 link aquí](https://gpandradep.github.io/Intro-a-R/posts/Instalar%20R%20y%20Rstudio/)
 
 ## Rtools
 
