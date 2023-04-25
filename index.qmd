@@ -11,7 +11,7 @@ date: last-modified
 
 # Bienvenidos
 
-Hola a todos bienvenidos al curso de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso.
+Hola a todos bienvenidos al curso de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos de fototrampeo**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso.
 
 ![](img/flayer.jpg){fig-align="center" width="462"}
 
@@ -97,6 +97,6 @@ A continuación encontraras los link de descarga para los materiales (datos y sc
 
 # Entidades patrocinadoras
 
-Este curso fue posible gracias al apoyo del programa de Servicio al Mundo y la fundación Podion.
+Este curso fue posible gracias al apoyo del programa de Servicio al Mundo y la fundación Podion. La logística del evento es coordinada por el CAPES y con apoyo de ANID PIA/BASAL FB0002.
 
 ![](img/institutions.png){fig-align="center" width="702"}
