@@ -221,7 +221,7 @@ Para ello vamos a aprovecharnos de la capacidad de dplyr para el manejo de bases
 IAR_D0 <- registrosD0 %>%  #Base de datos de registros
   left_join(Cam_esf) %>%  #Unimos con la base de esfuerzo 
   group_by(Station, Species) %>%  # Agrupamos por cada estación y especie
-  summarise(IAR= (n_events*n_events*n_nights_active)/100) # Aplicamos la formula para cálcular el RAI y listo
+  summarise(IAR= (n_events/n_nights_active)*100) # Aplicamos la formula para cálcular el RAI y listo
 ```
 
 De esta manera relativamente sencilla podemos obtener el valor de RAI, para cada especie y cada estación de muestreo. Tenemos que repetir este procedimiento para cada base de datos de distinto umbral de "independencia". Para hacer todo más eficiente voy a crear una pequeña función que me ahorre algo de código
@@ -236,7 +236,7 @@ Rai_fun <- function(registros, esfuerzo, delta){
  df_RAI <- registros %>% # registros
     left_join(esfuerzo) %>% # unir con esfuerzo
     group_by(Station, Species) %>% #agrupar por estacion y sp
-    summarise(IAR = (n_events*n_nights_active)/100) %>%  #Calcular IAR
+    summarise(IAR = (n_events/n_nights_active)*100) %>%  #Calcular IAR
     rename_at(., vars(contains("IAR")),list(~paste("IAR_D", delta, sep = "") )) # renombrar la columna con el delta adecuado
    
   return(df_RAI)
@@ -375,7 +375,19 @@ sp_lmdata <- data.frame(cov.fac, cov.num) %>% # Unir covariables
 
 ```
 
-Al tomar el IAR valores continuos suponemos que seguirá un error tipo *gaussiano*, por lo cual usaremos modelos lineales simples para modelarlo. NOTA: Al no tomar valores negativos quizás pueda ser error tipo gamma pero depende de cada quien probarlo.
+Veamos el mapa
+
+```{r}
+# estaría bien darle un vistazo espacial a los registros de la especie.
+
+ggplot(sp_lmdata, aes(x= utm_x, y= utm_y, col= IAR_D15))+
+  geom_point(aes(size= IAR_D15))+
+  scale_colour_gradient(low= "black", high = "red")+
+  scale_size(range = c(3,15))+
+  theme_bw()
+```
+
+Al tomar el IAR valores continuos suponemos que seguirá un error tipo *gaussiano*, por lo cual usaremos modelos lineales simples para modelarlo. NOTA: Al no tomar valores negativos quizás pueda ser error tipo gamma pero depende de cada caso probarlo.
 
 ```{r}
 # Modelos lineales 

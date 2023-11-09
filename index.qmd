@@ -1,6 +1,6 @@
 ---
-title: "Cámaras trampa en R"
-subtitle: "Procesamiento, Organización y Análisis de datos"
+title: "Taller cámaras Trampa en R"
+subtitle: "Procesamiento, Organización y Análisis de datos de fototrampeo"
 author: 
  - name: Gabriel Andrade-Ponce
    url: https://gpandradep.github.io/gpandradep/ 
@@ -11,7 +11,7 @@ date: last-modified
 
 # Bienvenidos
 
-Hola a todos bienvenidos al curso de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos de fototrampeo**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso.
+Hola a todos bienvenidos al taller de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos de fototrampeo**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso. Para tener el mínimo de contratiempos es importante que **todas las personas lleguen al taller con todos los programas y paquetes instalados.**
 
 ![](img/flayer.jpg){fig-align="center" width="462"}
 
@@ -27,6 +27,14 @@ Para todos los detalles de como instalar el software por favor seguir la ésta g
 
 Para instalar Rtools simplemente dirígete a este [**enlace**](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html) y sigue las instrucciones para instalar Rtools43
 
+## Familiaridad con R y estadística
+
+En este curso asistirán un grupo de personas heterogéneas y con diferente experiencia en R o en estadística. Este curso no es de R ni de estadística, pero si usaremos fuertemente ambas cosas. Es probable que en algunos segmentos del curso te sientas abrumado o perdido en conceptos estadísticos o incluso en el uso de R. Lo primero que les digo a esas personas es que es normal sentirse así. En un solo curso seguro no van a aprender ni R ni la cantidad de modelos que vamos a ver. Para muchas personas este es solo el primer paso y está pensado para mostrarles parte de las herramientas que existen para analizar datos de fototrampeo. Así que espero que se lleven eso al menos, una visión general de lo que existe y de como funciona. La única manera de aprenderlo realmente es cuando usas todas estas herramientas con tus datos , te enfrentas a tus propias preguntas y las resuelves poco a poco (al menos a mi me paso así 😀).
+
+De todas formas para la gente que nunca ha usado R le recomiendo al menos intentar familiarizarse un poco antes de empezar. Yo he diseñado una pequeña página con introductorio de R que les recomiendo visitar y seguir al menos hasta el taller 7.
+
+[***Introducción a R y RStudio***](https://gpandradep.github.io/Intro-a-R/)
+
 ## DigiKam
 
 Para instalar DigiKam debes seguir los siguientes pasos:
@@ -39,7 +47,7 @@ Para instalar DigiKam debes seguir los siguientes pasos:
 
 ## Instalar paqueterías
 
-Se espera que previo al curso instales las siguientes paqueterías
+Se espera que previo al curso instales las siguientes paqueterías. Para ello, puedes usar el siguiente código dentro de R
 
 ```{r}
 #| eval: false
@@ -62,41 +70,68 @@ install.packages(c("camtrapR", # Camera Trap Data Management and Preparation of 
                    "ncf", #correlograms
                    "tictoc",
                    "beepr",
-                   "wiqid"
+                   "wiqid",
+                   "shinyWidgets",
+                   "mapview"
                    
 ))
 ```
 
+Para usar la versión de desarrollo de camtrapR debes correr debes correr este código:
+
+```{r}
+#| eval: false
+install.packages("remotes")
+install.packages("R.rsp")
+remotes::install_github("jniedballa/camtrapR")
+```
+
+Ésta versión contien opciones adicionales que no son esenciales para el curso, pero si para utilizar el Shiny (versión más amigable de los resultados).
+
 # Descargar materiales
 
-A continuación encontraras los link de descarga para los materiales (datos y scripts) que usaremos en el curso. Son carpetas comprimidas y recomiendo que las descargues y extraigas en la carpeta de tu preferencia **antes de comenzar el curso**
+A continuación encontraras los link de descarga para los materiales (datos y scripts) que usaremos en el curso. Son carpetas comprimidas y recomiendo que las descargues y extraigas en la carpeta de tu preferencia **antes de comenzar el curso.**
 
-## Día 1
+Nota: Si descargan las carpetas y no las descomprimen no les va a funcionar el proyecto.
 
-1.  [Introducción al diseño de muestreo en estudios de cámaras trampa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1-LRoK6Rb615uca15uoZAEBZATiHc4IUF/view?usp=share_link)
+## Modulo 1
 
-2.  [DigiKam para el etiquetado de fotos\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1eB7XwB40xLXlpQTMoADTyE0fvKhgXdG6/view?usp=share_link)
+### Día 1
+
+1.  [Introducción al diseño de muestreo en estudios de cámaras trampa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1KnmRg7a55UdMqPdMIVdCNujU1VFerRFP/view?usp=sharing)
+
+2.  [DigiKam para el etiquetado de fotos\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1x_F5shEbJm-ZQDejxmzWAVYxxF1RtEp7/view?usp=sharing)
 
 -   [Instrucciones en linea \[`r icons::fontawesome("signal")`\]](https://gpandradep.github.io/Curso/DigiKam.html)
 
-3.  [CamtrapR: organización y manejo de datos de cámaras trampa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1tMEDoTRcKAOoNm1bmNJcylA0CqaL3KkH/view?usp=share_link)
+3.  [CamtrapR: organización y manejo de datos de cámaras trampa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/10q70ndmxdXxRTxWlXYh7ku59le3_6yVL/view?usp=drive_link)
 
-## Día 2
+### Día 2
 
-4.  [Introducción al índice de abundancia relativa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1nFaN7RcElg3G33FphmXX9jXr3MrOdbUV/view?usp=share_link)
+4.  [Introducción al índice de abundancia relativa\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/17uxCJI-aBRe62To-5ZG5uwTlC3nqwgTu/view?usp=drive_link)
 
 -   [Script disponible en linea \[`r icons::fontawesome("signal")`\]](https://gpandradep.github.io/Curso/IAR_doc.html)
 
-5.  [Modelos de ocupación: Conceptos y ajuste en unmarked\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1vp4-GUmeOJnx6uRRCh1JbsUTdFbamLjK/view?usp=share_link)
+5.  [Modelos de ocupación: Conceptos y ajuste en unmarked\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1RWdyGpd5CPRvG1381f8MtG4qKwCHlwjq/view?usp=drive_link)
 
-## Día 3
+### Día 3
 
-6.  [Modelos de ocupación: continuación y métodos de validación del modelo\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1vp4-GUmeOJnx6uRRCh1JbsUTdFbamLjK/view?usp=share_link)
+Nota: el proyecto del punto 5. contiene todo lo necesario para el punto 6. por lo que no es necesario descargarlo de nuevo
 
-7.  [Modelos de ocupación para dos o más especies\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1BJ2yq_35au5TryVyB6EZ1j4aS_XB9xAl/view?usp=share_link)
+6.  [Modelos de ocupación: continuación y métodos de validación del modelo\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1RWdyGpd5CPRvG1381f8MtG4qKwCHlwjq/view?usp=drive_link)
+
+7.  [Modelos de ocupación para dos o más especies\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1ziFhfdK4yD6Z6qYUgJt-tE4yZwP2xEcm/view?usp=drive_link)
+
+## Modulo 2
+
+### Día 1
+
+8.  Modelos Royle-Nichols para abundancia de especies\[`r icons::fontawesome("download")`\]
+
+### Día 2
+
+9.  Modelos de ocupación dinámicos (multi-temporada)
 
 # Entidades patrocinadoras
 
 Este curso fue posible gracias al apoyo del programa de Servicio al Mundo y la fundación Podion. La logística del evento es coordinada por el CAPES y con apoyo de ANID PIA/BASAL FB0002.
-
-![](img/institutions.png){fig-align="center" width="702"}

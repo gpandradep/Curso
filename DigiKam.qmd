@@ -32,7 +32,7 @@ Una vez instalado DigiKam tenemos que configurarlo y generar la carpeta donde se
 
 6.  Todos los demás pasos los dejaremos por defecto y pondremos siguiente hasta que lleguemos a finalizar.
 
-7.  Ya una vez iniciado Digikam iremos a la pestaña de preferencias y configuración de DigiKam. Se desplegara una ventana y en la sección izquierda unos iconos. Por ahora nos centraremos en meta-datos. En la parte inferior quitaremos la opción de actualizar fecha de modificación del archivo cuando se modifique. Ésto es importante porque necesitamos la fecha original del archivo ya que es la fecha de registro de la foto
+7.  Ya una vez iniciado Digikam iremos a la pestaña de preferencias y configuración de DigiKam. Se desplegara una ventana y en la sección izquierda unos iconos. Por ahora nos centraremos en meta-datos. En la parte inferior marcaremos la opción de actualizar fecha de modificación del archivo cuando se modifique. Ésto es importante porque necesitamos la fecha original del archivo ya que es la fecha de registro de la foto
 
 ![](img/Digi7.png){fig-align="center" width="520"}
 
@@ -90,4 +90,34 @@ Muy bien. Ahora tenemos que repetir el proceso para cada una de las fotos. Estas
 
 Es posible generar diferentes etiquetas dependiendo de los objetivos e intereses del estudio. Por ejemplo, puedes asignar etiquetas para individuos identificados, sexo o comportamientos. Lo importante aquí es que deben ser etiquetas independientes, o con una jerarquía diferente de la de especie.
 
-## 
+# Adicionales
+
+Felicidades por llegar hasta este punto. DigiKam es la opción que yo he usado con mayor frecuencia para organizar mis fotografías, pero no es la única opción. Existen diferentes aproximaciones para enfrentarse a la sistematización de fotografías. Como en todo, en los gustos están los colores y quizás para muchos sean más sencillo trabajar otra plataforma. Así que si les pica la curiosidad les quiero mencionar otras alternativas muy interesantes que pueden aprender por si solos.
+
+### [Timelapse: An Image Analyser for camera traps](https://saul.cpsc.ucalgary.ca/timelapse/)
+
+Timelapse es un software gratuito enfocado para la visualización y organización de fotografías de cámaras trampa. No lo he usado mucho, pero lo poco que he explorado es mucho más liviano y con más opciones que DigiKam (recuerden que DigiKam no es para cámaras trampa). En el puedes agregar etiquetas que guarda en una base de datos, pero desconozco si quedan guardadas en las imágenes. Quizás lo "complicado" es que se basa en un sistema de "templates" donde tu agregas los campos o "etiquetas" que necesitas en tu proyecto. Otra ventaja interesante es que tiene integrado a MegaDetector un algoritmo para la clasificación automática de fotografías, cosa que puede facilitar el trabajo en proyectos gigantes. Aun así hay que probar la eficacia de este tipo de algoritmos en especies neo tropicales. Tiene manuales detallados y videos de ayuda que facilitan entenderlo.
+
+![](img/timelapse.png)
+
+### [Camelot](https://camelotproject.org/)
+
+Camelot es otro software enfocado en cámaras trampa un poco más elegante que TimeLapse y con varias opciones de más en las especificaciones del proyecto. Estas opciones extra pueden hacer la curva de aprendizaje algo mayor al principio, pero cuenta también con manuales bien específicos. Además, los autores lo siguen manteniendo y contestan cualquier duda o problema que se tenga. Tiene también incluido la opción de usar a MegaDetector para la casificación automática de fotos. Spoiler: También tiene flexibilidad en los reportes que genera e incluye pensado para conectarse con camtrapR.
+
+![](img/camelot.png)
+
+### [Wildlife Insights](https://www.wildlifeinsights.org/)
+
+Wildlife Insights es una plataforma dedicada al almacenamientos y procesamiento de datos de cámaras trampa. Requiere de una cuenta y conexión a Internet. Esta diseñada para usar algoritmos de machine learning para organizar y etiquetar fotografías. Además, es capaz de generar diferentes tipos de salidas gráficas o bases de datos. Los datos se suben al portal tienen un embargo de meses y posteriormente se vuelven públicos. Lo bueno es que sus algoritmos tienen bastante entrenamiento con especies de los trópicos.
+
+![](img/Wildlife.png)
+
+## Fuentes adicionales
+
+Cada vez son más personas y más grandes los proyectos con cámras trampa. Analizar este tipo de información de la manera mas eficaz y eficiente es crucial no solo para nuestras tesis sino también porque la conservación muchas veces requiere resultados inmediatos. Por ello, las maneras de analizar este tipo de datos irán evolucionando y cambiando. Por eso les dejo aquí estos dos artículos generales que pueden ayudarles a tener una visión general del fototrampeo.
+
+[Lizcano, D. J. (2018). Trampas cámara como herramienta para estudiar mamíferos silvestres. *Mammalogy Notes*, *5*(1-2), 31-35.](https://mammalogynotes.org/ojs/index.php/mn/article/view/104)
+
+Además si están interesados en los algoritmos de reconocimiento automático de fotos les dejo esta guia. Este es un tema que puede ser complicado para muchas personas, pero creo que aquí se hace un buen primer trabajo para quienes quieren entrar al tema (Igual requiere tener buen inglés y algo de experiencia con código)
+
+[Velez and Fieberg 2022. Guide for using artificial intelligence platforms for camera-trap data processing](https://ai-camtraps.netlify.app/)

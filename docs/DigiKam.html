@@ -116,7 +116,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#etiquetar-fotos" id="toc-etiquetar-fotos" class="nav-link" data-scroll-target="#etiquetar-fotos">Etiquetar fotos</a>
   <ul class="collapse">
   <li><a href="#otras-etiquetas" id="toc-otras-etiquetas" class="nav-link" data-scroll-target="#otras-etiquetas">Otras etiquetas</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  <li><a href="#adicionales" id="toc-adicionales" class="nav-link" data-scroll-target="#adicionales">Adicionales</a>
+  <ul class="collapse">
+  <li><a href="#timelapse-an-image-analyser-for-camera-traps" id="toc-timelapse-an-image-analyser-for-camera-traps" class="nav-link" data-scroll-target="#timelapse-an-image-analyser-for-camera-traps">Timelapse: An Image Analyser for camera traps</a></li>
+  <li><a href="#camelot" id="toc-camelot" class="nav-link" data-scroll-target="#camelot">Camelot</a></li>
+  <li><a href="#wildlife-insights" id="toc-wildlife-insights" class="nav-link" data-scroll-target="#wildlife-insights">Wildlife Insights</a></li>
+  <li><a href="#fuentes-adicionales" id="toc-fuentes-adicionales" class="nav-link" data-scroll-target="#fuentes-adicionales">Fuentes adicionales</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -150,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">21 de abril de 2023</p>
+      <p class="date">8 de noviembre de 2023</p>
     </div>
   </div>
   
@@ -170,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Configurar archivos raw</strong>: Esta opción la dejamos por defecto y continuamos</p></li>
 <li><p><strong>Configurar almacenamiento de meta-datos</strong>: En este punto le damos que si queremos añadir la información a los archivos. Esto hace que guarde los metadatos cuando lo indiquemos y son precisamente los que se usarán en CamtrapR</p></li>
 <li><p>Todos los demás pasos los dejaremos por defecto y pondremos siguiente hasta que lleguemos a finalizar.</p></li>
-<li><p>Ya una vez iniciado Digikam iremos a la pestaña de preferencias y configuración de DigiKam. Se desplegara una ventana y en la sección izquierda unos iconos. Por ahora nos centraremos en meta-datos. En la parte inferior quitaremos la opción de actualizar fecha de modificación del archivo cuando se modifique. Ésto es importante porque necesitamos la fecha original del archivo ya que es la fecha de registro de la foto</p></li>
+<li><p>Ya una vez iniciado Digikam iremos a la pestaña de preferencias y configuración de DigiKam. Se desplegara una ventana y en la sección izquierda unos iconos. Por ahora nos centraremos en meta-datos. En la parte inferior marcaremos la opción de actualizar fecha de modificación del archivo cuando se modifique. Ésto es importante porque necesitamos la fecha original del archivo ya que es la fecha de registro de la foto</p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -232,8 +238,31 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="otras-etiquetas">Otras etiquetas</h2>
 <p>Es posible generar diferentes etiquetas dependiendo de los objetivos e intereses del estudio. Por ejemplo, puedes asignar etiquetas para individuos identificados, sexo o comportamientos. Lo importante aquí es que deben ser etiquetas independientes, o con una jerarquía diferente de la de especie.</p>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+<section id="adicionales" class="level1">
+<h1>Adicionales</h1>
+<p>Felicidades por llegar hasta este punto. DigiKam es la opción que yo he usado con mayor frecuencia para organizar mis fotografías, pero no es la única opción. Existen diferentes aproximaciones para enfrentarse a la sistematización de fotografías. Como en todo, en los gustos están los colores y quizás para muchos sean más sencillo trabajar otra plataforma. Así que si les pica la curiosidad les quiero mencionar otras alternativas muy interesantes que pueden aprender por si solos.</p>
+<section id="timelapse-an-image-analyser-for-camera-traps" class="level3">
+<h3 class="anchored" data-anchor-id="timelapse-an-image-analyser-for-camera-traps"><a href="https://saul.cpsc.ucalgary.ca/timelapse/">Timelapse: An Image Analyser for camera traps</a></h3>
+<p>Timelapse es un software gratuito enfocado para la visualización y organización de fotografías de cámaras trampa. No lo he usado mucho, pero lo poco que he explorado es mucho más liviano y con más opciones que DigiKam (recuerden que DigiKam no es para cámaras trampa). En el puedes agregar etiquetas que guarda en una base de datos, pero desconozco si quedan guardadas en las imágenes. Quizás lo “complicado” es que se basa en un sistema de “templates” donde tu agregas los campos o “etiquetas” que necesitas en tu proyecto. Otra ventaja interesante es que tiene integrado a MegaDetector un algoritmo para la clasificación automática de fotografías, cosa que puede facilitar el trabajo en proyectos gigantes. Aun así hay que probar la eficacia de este tipo de algoritmos en especies neo tropicales. Tiene manuales detallados y videos de ayuda que facilitan entenderlo.</p>
+<p><img src="img/timelapse.png" class="img-fluid"></p>
+</section>
+<section id="camelot" class="level3">
+<h3 class="anchored" data-anchor-id="camelot"><a href="https://camelotproject.org/">Camelot</a></h3>
+<p>Camelot es otro software enfocado en cámaras trampa un poco más elegante que TimeLapse y con varias opciones de más en las especificaciones del proyecto. Estas opciones extra pueden hacer la curva de aprendizaje algo mayor al principio, pero cuenta también con manuales bien específicos. Además, los autores lo siguen manteniendo y contestan cualquier duda o problema que se tenga. Tiene también incluido la opción de usar a MegaDetector para la casificación automática de fotos. Spoiler: También tiene flexibilidad en los reportes que genera e incluye pensado para conectarse con camtrapR.</p>
+<p><img src="img/camelot.png" class="img-fluid"></p>
+</section>
+<section id="wildlife-insights" class="level3">
+<h3 class="anchored" data-anchor-id="wildlife-insights"><a href="https://www.wildlifeinsights.org/">Wildlife Insights</a></h3>
+<p>Wildlife Insights es una plataforma dedicada al almacenamientos y procesamiento de datos de cámaras trampa. Requiere de una cuenta y conexión a Internet. Esta diseñada para usar algoritmos de machine learning para organizar y etiquetar fotografías. Además, es capaz de generar diferentes tipos de salidas gráficas o bases de datos. Los datos se suben al portal tienen un embargo de meses y posteriormente se vuelven públicos. Lo bueno es que sus algoritmos tienen bastante entrenamiento con especies de los trópicos.</p>
+<p><img src="img/Wildlife.png" class="img-fluid"></p>
+</section>
+<section id="fuentes-adicionales" class="level2">
+<h2 class="anchored" data-anchor-id="fuentes-adicionales">Fuentes adicionales</h2>
+<p>Cada vez son más personas y más grandes los proyectos con cámras trampa. Analizar este tipo de información de la manera mas eficaz y eficiente es crucial no solo para nuestras tesis sino también porque la conservación muchas veces requiere resultados inmediatos. Por ello, las maneras de analizar este tipo de datos irán evolucionando y cambiando. Por eso les dejo aquí estos dos artículos generales que pueden ayudarles a tener una visión general del fototrampeo.</p>
+<p><a href="https://mammalogynotes.org/ojs/index.php/mn/article/view/104">Lizcano, D. J. (2018). Trampas cámara como herramienta para estudiar mamíferos silvestres. <em>Mammalogy Notes</em>, <em>5</em>(1-2), 31-35.</a></p>
+<p>Además si están interesados en los algoritmos de reconocimiento automático de fotos les dejo esta guia. Este es un tema que puede ser complicado para muchas personas, pero creo que aquí se hace un buen primer trabajo para quienes quieren entrar al tema (Igual requiere tener buen inglés y algo de experiencia con código)</p>
+<p><a href="https://ai-camtraps.netlify.app/">Velez and Fieberg 2022. Guide for using artificial intelligence platforms for camera-trap data processing</a></p>
 
 
 </section>
