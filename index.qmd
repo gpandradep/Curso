@@ -13,7 +13,7 @@ date: last-modified
 
 Hola a todos bienvenidos al taller de **Cámaras trampa en R: Procesamiento Organización y Análisis de datos de fototrampeo**. En esta página encontrarán todas las instrucciones para llevar a cabo el curso. Para tener el mínimo de contratiempos es importante que **todas las personas lleguen al taller con todos los programas y paquetes instalados.**
 
-![](img/flayer.jpg){fig-align="center" width="462"}
+![](img/flayer.jpg){fig-align="center" width="538"}
 
 # Instrucciones
 
