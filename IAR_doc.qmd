@@ -6,7 +6,7 @@ date: last-modified
 author:
   - name: Gabriel Andrade-Ponce 
     url: https://gpandradep.github.io/gpandradep/
-    affiliation: Instituto de Ecología A.C.
+    affiliation: IUP-ESPRE Y CUES, A.C.
     
 format:
   html:

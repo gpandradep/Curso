@@ -4,7 +4,7 @@ subtitle: "Procesamiento, Organización y Análisis de datos de fototrampeo"
 author: 
  - name: Gabriel Andrade-Ponce
    url: https://gpandradep.github.io/gpandradep/ 
-   affiliation: Posgrado, Instituto de Ecología A.C.
+   affiliation: IUP-ESPRE Y CUES, A.C.
    orcid_id: 0000-0003-2416-1792
 date: last-modified
 ---
