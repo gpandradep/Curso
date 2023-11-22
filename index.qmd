@@ -126,7 +126,7 @@ Nota: el proyecto del punto 5. contiene todo lo necesario para el punto 6. por l
 
 ### Día 1
 
-8.  Modelos Royle-Nichols para abundancia de especies\[`r icons::fontawesome("download")`\]
+8.  [Modelos Royle-Nichols para abundancia de especies\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1HRrq2ZDx32zkrzvgSMNadmshQ2NQ-_K_/view?usp=drive_link)
 
 ### Día 2
 
