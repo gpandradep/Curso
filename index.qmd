@@ -130,7 +130,7 @@ Nota: el proyecto del punto 5. contiene todo lo necesario para el punto 6. por l
 
 ### Día 2
 
-9.  Modelos de ocupación dinámicos (multi-temporada)
+9.  [Modelos de ocupación dinámicos (multi-temporada)\[`r icons::fontawesome("download")`\]](https://drive.google.com/file/d/1oUwNY6CLPICbZ5ksqgkkUpHIwyVml0gQ/view?usp=drive_link)
 
 # Entidades patrocinadoras
 
